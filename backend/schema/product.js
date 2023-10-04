@@ -5,7 +5,7 @@ const imageSchema = new mongoose.Schema({
 });
 
 const productSchema = new mongoose.Schema({
-  productName: {
+  name: {
     type: String,
     required: true,
   },
@@ -28,4 +28,4 @@ const productSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("product", productSchema);
-module.exports = mongoose.model("image", imageSchema);
+// module.exports = mongoose.model("image", imageSchema);
